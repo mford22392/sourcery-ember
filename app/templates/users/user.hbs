@@ -1,3 +1,25 @@
-{{outlet}}
+<div class="col-xs-6">
+  <h2>{{model.gmail_name}}</h2>
 
-{{model.gmail_name}}
+  <h3>Resources</h3>
+  <ul>
+    {{#each model.resources as |resource|}}
+      <li>{{link-to resource.title "resources.resource"}}</li>
+  {{/each}}
+  </ul>
+  <h3>Groups</h3>
+  <ul>
+    {{#each model.groups as |group|}}
+      <li>{{link-to group.topic "groups.group" group}}</li>
+  {{/each}}
+  </ul>
+  <h3>Comments</h3>
+  <ul>
+    {{#each model.comments as |comment|}}
+      <li>{{comment.content}}</li>
+  {{/each}}
+  </ul>
+</div>
+
+
+

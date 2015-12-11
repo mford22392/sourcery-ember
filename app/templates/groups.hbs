@@ -1,8 +1,18 @@
-{{outlet}}
+<div class="row">
+  <div class="col-xs-3">
 
-<ul>
-  {{#each model as |group|}}
-  
-    <li> {{link-to group.topic "groups.group" group}} | {{group.description}}</li>
-  {{/each}}
-</ul>
+    <ul>
+      {{#each model as |group|}}
+      
+        <li> {{link-to group.topic "groups.group" group}} | {{group.description}}</li>
+      {{/each}}
+    </ul>
+
+  </div>
+
+  <div class="col-xs-9">
+    {{outlet}}
+  </div>
+
+
+</div>

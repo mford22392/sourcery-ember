@@ -1,3 +1,12 @@
-{{outlet}}
+<div class="col-xs-6">
+  <h2>{{model.topic}}</h2>
 
-{{model.topic}}
+  <ul>
+    {{#each model.resources as |resource|}}
+      <li>{{link-to resource.title "resources.resource"}}</li>
+  {{/each}}
+  </ul>
+</div>
+
+
+

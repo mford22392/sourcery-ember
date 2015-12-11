@@ -1,7 +1,17 @@
-{{outlet}}
+<div class="row">
+  <div class="col-xs-3">
 
-<ul>
-  {{#each model as |user|}}
-    <li> {{link-to user.gmail_name "users.user" user}}</li>
-  {{/each}}
-</ul>
+  <ul>
+    {{#each model as |user|}}
+      <li> {{link-to user.gmail_name "users.user" user}}</li>
+    {{/each}}
+  </ul>
+
+  </div>
+
+  <div class="col-xs-9">
+    {{outlet}}
+  </div>
+
+
+</div>

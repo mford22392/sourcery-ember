@@ -1,0 +1,13 @@
+<h3>Add a New Group</h3>
+
+<form>
+  <p>
+    <label for="topic">Topic</label>
+    {{input type="text" value=model.topic placeholder="topic"}}
+  </p>
+  <p>
+    <label for="description">Description</label>
+    {{input type="text" value=model.description placeholder="description"}}
+  </p>
+  <button id="submit" {{action "save" model}}>Add New Group</button>
+</form>
