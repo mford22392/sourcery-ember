@@ -1,7 +1,17 @@
-{{outlet}}
+<div class="row">
+  <div class="col-xs-3">
 
-<ul>
-  {{#each model as |resource|}}
+    <ul>
+      {{#each model as |resource|}}
     <li> {{link-to resource.title "resources.resource" resource}}</li>
   {{/each}}
-</ul>
+    </ul>
+
+  </div>
+
+  <div class="col-xs-9">
+    {{outlet}}
+  </div>
+
+
+</div>
