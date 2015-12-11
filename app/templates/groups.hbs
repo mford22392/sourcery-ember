@@ -1,0 +1,8 @@
+{{outlet}}
+
+<ul>
+  {{#each model as |group|}}
+  
+    <li> {{link-to group.topic "groups.group" group}} | {{group.description}}</li>
+  {{/each}}
+</ul>

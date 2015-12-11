@@ -1,0 +1,7 @@
+{{outlet}}
+
+<ul>
+  {{#each model as |user|}}
+    <li> {{link-to user.gmail_name "users.user" user}}</li>
+  {{/each}}
+</ul>

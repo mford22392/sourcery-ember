@@ -6,6 +6,18 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+
+  this.route('resources', function() {
+    this.route('resource', {path: ":resource_id"});
+  });
+
+  this.route('users', function() {
+    this.route('user', {path: ":user_id"});
+  });
+
+  this.route('groups', function() {
+    this.route('group', {path: ":group_id"});
+  });
 });
 
 export default Router;

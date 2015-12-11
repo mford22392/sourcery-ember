@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      // 'connect-src': "'self', ws://0.0.0.0:49154, ws://localhost:49154",
+      'connect-src': "*"
+    }, 
     modulePrefix: 'sourcery-ember',
     environment: environment,
     baseURL: '/',

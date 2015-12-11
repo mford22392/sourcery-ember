@@ -1,0 +1,7 @@
+{{outlet}}
+
+<ul>
+  {{#each model as |resource|}}
+    <li> {{link-to resource.title "resources.resource" resource}}</li>
+  {{/each}}
+</ul>
