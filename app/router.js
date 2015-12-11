@@ -9,10 +9,12 @@ Router.map(function() {
 
   this.route('resources', function() {
     this.route('resource', {path: ":resource_id"});
+    this.route('new');
   });
 
   this.route('users', function() {
     this.route('user', {path: ":user_id"});
+    this.route('new');
   });
 
   this.route('groups', function() {

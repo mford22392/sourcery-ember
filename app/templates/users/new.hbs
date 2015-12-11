@@ -1,0 +1,13 @@
+<h3>Add a New User</h3>
+
+<form>
+  <p>
+    <label for="topic">Name</label>
+    {{input type="text" value=model.gmail_name placeholder="name"}}
+  </p>
+  <p>
+    <label for="description">Email</label>
+    {{input type="text" value=model.email placeholder="email"}}
+  </p>
+  <button id="submit" {{action "save" model}}>Add New User</button>
+</form>
